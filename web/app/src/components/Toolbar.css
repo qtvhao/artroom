@@ -1,0 +1,129 @@
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.toolbar-ai-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e65100;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.toolbar-ai-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.4);
+}
+
+.toolbar-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-tool {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a5568;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.toolbar-tool:hover {
+  background-color: #f7fafc;
+}
+
+.toolbar-tool--active {
+  background-color: #ebf4ff;
+  color: #3182ce;
+}
+
+.toolbar-brush-size {
+  background: white;
+  padding: 12px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar-brush-slider {
+  writing-mode: vertical-lr;
+  direction: rtl;
+  width: 8px;
+  height: 100px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #e2e8f0;
+  border-radius: 4px;
+  outline: none;
+}
+
+.toolbar-brush-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #2d3748;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toolbar-brush-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #2d3748;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.toolbar-color {
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-color-picker {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.toolbar-color-picker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.toolbar-color-picker::-webkit-color-swatch {
+  border: 2px solid #e2e8f0;
+  border-radius: 50%;
+}
